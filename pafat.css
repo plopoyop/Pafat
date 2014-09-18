@@ -16,7 +16,7 @@ html, body {
 }
 
 /*=== Links */
-a, button.as-link{
+a {
 	color: #2980b9;
 	outline: none;
 }
@@ -377,10 +377,12 @@ a.btn {
 }
 .dropdown-menu > .item {
 }
-.dropdown-menu > .item > a {
+.dropdown-menu > .item > a,
+button.as-link,button.as-link:hover {
 	padding: 0 25px;
 	line-height: 2.5em;
 	color: #666;
+	font-size: 0.8rem;
 }
 .dropdown-menu > .item > span {
 	padding: 0 25px;
