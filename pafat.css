@@ -16,7 +16,7 @@ html, body {
 }
 
 /*=== Links */
-a {
+a, button.as-link{
 	color: #2980b9;
 	outline: none;
 }
