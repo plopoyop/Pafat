@@ -169,10 +169,22 @@ form th {
 	cursor: pointer;
 	overflow: hidden;
 }
+
 a.btn {
 	min-height: 25px;
 	line-height: 25px;
 }
+
+
+a.btn {
+	min-height: 25px;
+	line-height: 25px;
+}
+
+.read_all.btn {
+	height:29px;
+}
+
 .btn:hover {
 	background: #f0f0f0;
 	text-decoration: none;
