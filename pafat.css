@@ -687,6 +687,10 @@ form th {
 	padding: 5px 0;
 }
 
+.read_all{
+	line-height: 29px;
+}
+
 /*=== Feed articles */
 .flux {
 	border-left: 3px solid #5cb85c;
