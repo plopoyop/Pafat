@@ -28,8 +28,9 @@ legend {
 	border-bottom: 1px solid #ddd;
 	font-size: 1.4em;
 }
+
 label {
-	min-height: 25px;
+	min-height: 31px;
 	padding: 5px 0;
 	cursor: pointer;
 }
@@ -38,7 +39,7 @@ textarea {
 	height: 100px;
 }
 input, select, textarea {
-	min-height: 25px;
+	height: 35px;
 	padding: 1px;
 	background: #fdfdfd;
 	border: 1px solid #bbb;
@@ -46,11 +47,11 @@ input, select, textarea {
 	color: #666;
 	line-height: 21px;
 	vertical-align: middle;
+	width : 180px;
+	
+	box-sizing: border-box;
 }
 
-select{
-	height:29px;
-}
 option {
 	padding: 0 .5em;
 }
@@ -108,11 +109,10 @@ form th {
 	text-align: right;
 }
 .form-group .group-controls {
-	min-height: 25px;
+	min-height: 45px;
 	padding: 5px 0;
-	margin : 10px 0 10px 220px;
-
 }
+
 .form-group table {
 	margin: 10px 0 0 220px;
 }
@@ -131,9 +131,7 @@ form th {
 .stick input:first-child {
 	border-radius: 3px 0 0 3px;
 }
-.stick .btn-important:first-child {
-	width:176px;
-}
+
 .stick .btn:last-child,
 .stick input:last-child {
 	border-radius: 0 3px 3px 0;
@@ -150,7 +148,9 @@ form th {
 	border-left: none;
 
 }	
-	
+
+
+
 .stick .btn + .dropdown > .btn {
 	border-left: none;
 	border-radius: 0 3px 3px 0;
@@ -158,8 +158,8 @@ form th {
 
 .btn {
 	display: inline-block;
-	min-height: 29px;
-	min-width: 15px;
+	min-height: 35px;
+	line-height: 31px;
 	margin: 0;
 	padding: 1px 5px;
 	background: #fff;
@@ -170,21 +170,9 @@ form th {
 	vertical-align: middle;
 	cursor: pointer;
 	overflow: hidden;
-}
-
-a.btn {
-	min-height: 25px;
-	line-height: 25px;
-}
-
-
-a.btn {
-	min-height: 25px;
-	line-height: 25px;
-}
-
-.read_all.btn {
-	height:29px;
+	
+	
+	box-sizing: border-box;
 }
 
 .btn:hover {
@@ -518,7 +506,6 @@ a.btn {
  
 .header > .item.search input {
 	width: 230px;
-	height : 29px;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -528,7 +515,7 @@ a.btn {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	height : 29px;
+	height : 35px;
 }
 
 .header .item.search input:focus {
@@ -548,29 +535,36 @@ a.btn {
 }
 
 /*=== Aside main page (categories) */
-.categories {
+.configure-feeds{
+	display: block;
+}
+
+.categories, .configure-feeds {
 	text-align: center;
 }
-.category {
+
+.category, .configure-feeds {
 	width: 215px;
 	margin: 10px auto;
 	text-align: left;
 }
-.category .btn:first-child {
+.category.all .btn:first-child, .category.favorites .btn:first-child {
 	position: relative;
-	width: 203px;
+	width: 215px;
 }
-.category.stick .btn:first-child {
-	width: 176px;
+
+.category.stick .btn:first-child, .configure-feeds.stick .btn:first-child {
+	position: relative;
+	width: 188px;
 }
 .category .btn:first-child:not([data-unread="0"]):after {
 	position: absolute;
-	top: 2px; right: 3px;
+	top: 3px; right: 3px;
 	padding: 0px 3px;
 	border: 1px solid ;
 	border-radius: 3px;
 	font-size:10pt;
-	line-height : 20px;
+	line-height : 25px;
 }
 
 /*=== Aside main page (feeds) */
